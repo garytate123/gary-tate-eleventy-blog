@@ -203,4 +203,4 @@ eleventyNavigation:
 
 
 
-<script src="/js/tip-calc.js"></script>
+<script src="/js/projects.js"></script>
