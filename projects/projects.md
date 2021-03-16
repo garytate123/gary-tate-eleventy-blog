@@ -14,7 +14,7 @@ eleventyNavigation:
     <!-- Website images on computer starts here -->
     <div class="row"> 
     <!-- First website image starts here -->
-    <div class="col-md-3">
+    <div class="col-lg-3 col-sm-6">
     <div class="website-images">
     <label>Gary Tate's Web Dev Profile 
         <a href="https://gt-web-dev.site/" target="_blank"><img src="/img/websites/Gary Tate on computer image.jpg" alt="Photo of Gary Tate's web development profile website on a computer"></a>
@@ -23,7 +23,7 @@ eleventyNavigation:
     </div>
     <!-- First website image ends here -->
     <!-- Second website image starts here -->
-    <div class="col-md-3">
+    <div class="col-lg-3 col-sm-6">
     <div class="website-images">
     <label>Photography Blog Website
       <a href="https://garytate-photography-blog.netlify.app" target="_blank"><img src="/img/websites/Photography on computer image.jpg" alt="Photo of a Photography blog website on a computer"></a>  
@@ -32,7 +32,7 @@ eleventyNavigation:
     </div>
     <!-- Second website image ends here -->
     <!-- Third website image starts here -->
-    <div class="col-md-3">
+    <div class="col-lg-3 col-sm-6">
     <div class="website-images">
     <label>Band Profile Website 
         <a href="https://garytate-band-site.netlify.app" target="_blank"><img src="/img/websites/Band website on computer image.jpg" alt="Photo of bands profile website on a computer">
@@ -42,7 +42,7 @@ eleventyNavigation:
     </div>
     <!-- Third website image ends here -->
     <!-- Forth website image starts here -->
-    <div class="col-md-3">
+    <div class="col-lg-3 col-sm-6">
     <div class="website-images">
     <label>Static Website
        <a href="https://garytate-static-site.netlify.app" target="_blank"><img src="/img/websites/Static site website on computer image.jpg" alt="Photo of static website on a computer"></a> 
@@ -64,9 +64,60 @@ eleventyNavigation:
     <br>
 </div>
 <div class="row">
-  <div class="col-md-4">
+<!-- Simple Form starts here -->
+  <div class="col-lg-4">
+    <form class="form-control form-signin box-styling" id="validation-form">
+      <h2>Validation Form</h2>
+      <p>This is a form that will validate your inputs and let you know if there are any errors.</p>
+      <hr>
+      <!-- First input starts here -->
+      <div class="form-inputs success "> 
+      <label>First Name<br>
+      <input name="firstName" id="firstName" type="text" placeholder="Your first name">
+      </label>
+      <!-- <i class ="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small> -->
+      </div>
+      <!-- First input ends here -->
+       <!-- Second input starts here -->
+      <div class="form-inputs error"> 
+      <label>Last Name<br>
+      <input name="lastName" id="lastName" type="text" placeholder="Your last name">
+      </label>
+      <!-- <i class ="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small> -->
+      </div>
+      <!-- Second input ends here -->
+       <!-- Email input starts here -->
+      <div class="form-inputs error"> 
+      <label>Your email<br>
+      <input name="email" id="email" type="email" placeholder="Your email">
+      </label>
+      <!-- <i class ="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small> -->
+      </div>
+      <!-- Email input ends here -->
+       <!-- Password input starts here -->
+      <div class="form-inputs success"> 
+      <label>Your password<br>
+      <input name="password" id="password" type="password" placeholder="Your password">
+      </label>
+      <!-- <i class ="fas fa-check-circle"></i>
+      <i class="fas fa-exclamation-circle"></i>
+      <small>Error Message</small> -->
+      </div>
+      <!-- Password input ends here -->
+      <button class="btn" type="button" id="valid-form" >Submit</button>
+    </form>
+  </div>
+  <!-- Simple Form ends here -->
+<!-- Simple Form starts here -->
+  <div class="col-lg-4">
     <form class="form-control form-signin box-styling">
-      <h1>Simple Form</h1>
+      <h2>Simple Form</h2>
       <p>This form will take your first and last name as inputs and will display your full name.</p>
       <hr>
       <h3 id="userName">You Name</h3>
@@ -82,9 +133,11 @@ eleventyNavigation:
       <button class="btn" type="button" id="name-btn" >Submit</button>
     </form>
   </div>
-  <div class="col-md-4">
+  <!-- Simple Form ends here -->
+  <!-- Simple Calculator 1 starts here -->
+  <div class="col-lg-4">
     <form class="form-control form-signin box-styling">
-      <h1>Simple Calculator</h1>
+      <h2>Simple Calculator 1</h2>
       <p>This is a simple addition calculator. Enter two numbers and see the answer below.</p>
       <hr>
       <label>First number<br>
@@ -100,9 +153,12 @@ eleventyNavigation:
       <h1 id="answer"></h1>
     </form>
   </div>
-  <div class="col-md-4">
+  <!-- Simple 1 Calculator ends here -->
+  
+  <!-- Tip Calculator Starts here -->
+  <div class="col-lg-4">
     <form class="form-control form-signin box-styling">
-      <h1>Tip Calculator</h1>
+      <h2>Tip Calculator</h2>
       <p>Enter your bill amount and select the percentage of tip you would like to give. If there is only one person paying, you can either leave the number of people blank or enter 1.</p>
       <hr>
       <label>Bill amount<br>
@@ -135,9 +191,9 @@ eleventyNavigation:
       <h5 id="each">You will each pay a tip of:</h5>
       <h2><sup>£</sup><span id="tip">0.00</span> </h2>
     </div>
-  <!--totalTip end-->
     </form>
   </div>
+  <!-- Tip Calculator Starts here -->
 </div>  
 <!-- JavaScript Projects ends here -->
 <br>

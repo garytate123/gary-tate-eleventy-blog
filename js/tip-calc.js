@@ -61,3 +61,6 @@ function calculateTip() {
     calculateTip();
   
   };
+
+  // Form Validation
+  

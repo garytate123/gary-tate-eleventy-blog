@@ -279,7 +279,7 @@ footer {
   width: 100%;
   max-width: 330px;
   padding: 15px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 .form-signin .checkbox {
   font-weight: 400;
@@ -312,13 +312,11 @@ footer {
 /* styling for javascript projects on projects page */
 .box-styling {
   background-color: #dbf5f7;
-  /* background-image: radial-gradient(
-    circle 248px at center,
-    #7bf8ff 0%,
-    #5fd5f3 47%,
-    #8ac4d0 100%
-  ); */
   border: black solid 2px;
+  transition: 0.4s;
+}
+.box-styling:hover {
+  box-shadow: 0 0px 20px black;
 }
 
 /* Website Images on Projects page */
@@ -327,9 +325,48 @@ footer {
   border: black solid 2px;
   padding: 15px 0 0 0;
   transition: 0.4s;
+  margin: 30px 10px;
 }
 
 .website-images:hover {
-  transform: scale(1.1);
   transition: 0.4s;
+  box-shadow: 0 0px 30px var(--darkgray);
+}
+
+.form-inputs {
+  padding-bottom: 10px;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.form-control label input {
+  border: 1px solid var(--darkgray);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.form-control button {
+  border: 2px solid var(--darkgray);
+  width: 100%;
+  padding: 5px;
+  background-color: var(--darkgray);
+  color: white;
+}
+.form-control button:hover {
+  background-color: white;
+  color: var(--darkgray);
+  box-shadow: 0 0px 30px var(--darkgray);
+}
+.form-control .success input {
+  border: 1px solid rgb(1, 211, 1);
+  box-shadow: 0 0px 7px rgb(1, 211, 1);
+}
+.form-control .error input {
+  border: 1px solid red;
+  box-shadow: 0 0px 7px red;
 }
