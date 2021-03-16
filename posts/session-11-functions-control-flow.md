@@ -7,12 +7,12 @@ description: This session learners will be taught about how to write a function
   function to return an output.
 tags:
   - JavaScript
-date: 2021-03-16T21:27:13.597Z
+date: 2021-03-16T21:36:40.107Z
 thumbnail: /images/uploads/screenshot-2021-03-10-215831.png
 ---
 **Task 1:** Create a Percentage Calculator 
 
-
+![Percentage Calculator Function](/images/uploads/percentage-calculator.png "Percentage Calculator Function")
 
 **Task 2**\
 Customers can order 3 different types of drink and also select 3 sizes. Cola, Lemonade and  Orangeade\
@@ -24,7 +24,7 @@ Small, Medium and Large. The button they press have the values `cola`, `lemon`
 4. Create a message in each case statement to be returned.
 5. Console.log the returned message
 
-
+![Drinks Order Function](/images/uploads/drink-order.png "Drinks Order Function")
 
 **Task 3**\
 We need to create a function capable of using the addition, subtraction, multiply, divider or modulus operator on 2 numbers provided.
@@ -34,3 +34,5 @@ We need to create a function capable of using the addition, subtraction, multipl
 3. Use a switch statement to determine which operator to use.
 4. Add the math code for each operator in the case statement to return the value.
 5. `console.log` a message “{number1} {operator} {number2} = {value}"
+
+![Calculator Function](/images/uploads/calc-function.png "Calculator Function")
