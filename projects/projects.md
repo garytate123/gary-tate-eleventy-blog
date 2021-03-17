@@ -66,77 +66,54 @@ eleventyNavigation:
 <div class="row">
 <!-- Simple Form starts here -->
   <div class="col-lg-4">
-    <form class="form-control form-signin box-styling" id="validation-form">
+    <form  action="" method="POST" class="form-control form-signin" id="validation-form">
       <h2>Validation Form</h2>
-      <p>This is a form that will validate your inputs and let you know if there are any errors.</p>
+      <p>This is a form that uses JavaScript to validate your inputs and let you know if there are any errors.</p>
       <hr>
       <!-- First input starts here -->
-      <div class="form-inputs success "> 
       <label>First Name<br>
       <input name="firstName" id="firstName" type="text" placeholder="Your first name">
       </label>
-      <!-- <i class ="fas fa-check-circle"></i>
-      <i class="fas fa-exclamation-circle"></i>
-      <small>Error Message</small> -->
-      </div>
       <!-- First input ends here -->
-       <!-- Second input starts here -->
-      <div class="form-inputs error"> 
+      <!-- Second input starts here -->
       <label>Last Name<br>
-      <input name="lastName" id="lastName" type="text" placeholder="Your last name">
+      <input  name="lastName" id="lastName" type="text" placeholder="Your last name">
       </label>
-      <!-- <i class ="fas fa-check-circle"></i>
-      <i class="fas fa-exclamation-circle"></i>
-      <small>Error Message</small> -->
-      </div>
       <!-- Second input ends here -->
-       <!-- Email input starts here -->
-      <div class="form-inputs error"> 
+      <!-- Email input starts here -->
       <label>Your email<br>
       <input name="email" id="email" type="email" placeholder="Your email">
       </label>
-      <!-- <i class ="fas fa-check-circle"></i>
-      <i class="fas fa-exclamation-circle"></i>
-      <small>Error Message</small> -->
-      </div>
       <!-- Email input ends here -->
        <!-- Password input starts here -->
-      <div class="form-inputs success"> 
       <label>Your password<br>
       <input name="password" id="password" type="password" placeholder="Your password">
       </label>
-      <!-- <i class ="fas fa-check-circle"></i>
-      <i class="fas fa-exclamation-circle"></i>
-      <small>Error Message</small> -->
-      </div>
       <!-- Password input ends here -->
-      <button class="btn" type="button" id="valid-form" >Submit</button>
+      <button class="btn" type="submit" id="submit" name="submit">Submit</button>
     </form>
   </div>
-  <!-- Simple Form ends here -->
-<!-- Simple Form starts here -->
+      <!-- Simple Form ends here -->
+      <!-- Simple Form starts here -->
   <div class="col-lg-4">
-    <form class="form-control form-signin box-styling">
+    <form class="form-control form-signin">
       <h2>Simple Form</h2>
       <p>This form will take your first and last name as inputs and will display your full name.</p>
       <hr>
-      <h3 id="userName">You Name</h3>
+      <h3 id="userNameOutput">You Name</h3>
       <label>Your first name<br>
-      <input name="firstName" id="firstName" type="text" placeholder="Your first name">
+      <input name="firstName" id="simpleFormFirstName" type="text" placeholder="Your first name">
       </label>
-      <br>
       <label>Your last name<br>
-      <input name="lastName" id="lastName" type="text" placeholder="Your last name">
+      <input name="lastName" id="simpleFormLastName" type="text" placeholder="Your last name">
       </label>
-      <br>
-      <br>
       <button class="btn" type="button" id="name-btn" >Submit</button>
     </form>
   </div>
   <!-- Simple Form ends here -->
   <!-- Simple Calculator 1 starts here -->
   <div class="col-lg-4">
-    <form class="form-control form-signin box-styling">
+    <form class="form-control form-signin">
       <h2>Simple Calculator 1</h2>
       <p>This is a simple addition calculator. Enter two numbers and see the answer below.</p>
       <hr>
@@ -147,8 +124,6 @@ eleventyNavigation:
       <label>Second number<br>
       <input name="num2" id="num2" type="number" placeholder="Second number">
       </label>
-      <br>
-      <br>
       <button class="btn" type="button" id="calc-btn">Calculate!</button>
       <h1 id="answer"></h1>
     </form>
@@ -157,14 +132,13 @@ eleventyNavigation:
   
   <!-- Tip Calculator Starts here -->
   <div class="col-lg-4">
-    <form class="form-control form-signin box-styling">
+    <form class="form-control form-signin">
       <h2>Tip Calculator</h2>
       <p>Enter your bill amount and select the percentage of tip you would like to give. If there is only one person paying, you can either leave the number of people blank or enter 1.</p>
       <hr>
       <label>Bill amount<br>
       <span>£ </span><input id="billamt" type="text" placeholder="Bill amount">
       </label>
-      <br>
       <label>How much tip would you like to give?<br>
         <select id="serviceQual">
             <option disabled selected value="0">Choose an percentage</option>
@@ -177,16 +151,11 @@ eleventyNavigation:
             <option value="0.5">50&#37;</option>
         </select>
         </label>
-        <br>
         <label>How many people are sharing the bill?
         <input id="peopleamt" type="text" placeholder="Number of People">
         </label>
-        <br>
-        <br>
         <button class="btn" type="button" id="calculate">Calculate!</button>
   <!--calculator end-->
-        <br>
-        <br>
     <div id="totalTip">
       <h5 id="each">You will each pay a tip of:</h5>
       <h2><sup>£</sup><span id="tip">0.00</span> </h2>

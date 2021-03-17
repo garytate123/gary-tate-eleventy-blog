@@ -309,16 +309,6 @@ footer {
   border-top-right-radius: 0;
 }
 
-/* styling for javascript projects on projects page */
-.box-styling {
-  background-color: #dbf5f7;
-  border: black solid 2px;
-  transition: 0.4s;
-}
-.box-styling:hover {
-  box-shadow: 0 0px 20px black;
-}
-
 /* Website Images on Projects page */
 .website-images {
   background-color: #dbf5f7;
@@ -333,21 +323,31 @@ footer {
   box-shadow: 0 0px 30px var(--darkgray);
 }
 
-.form-inputs {
-  padding-bottom: 10px;
+/* styling for javascript projects on projects page */
+.form-control {
+  background-color: #dbf5f7;
+  border: black solid 2px;
+  transition: 0.4s;
 }
-
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-  position: relative;
+.form-control:hover {
+  box-shadow: 0 0px 20px black;
 }
 
 .form-control label input {
   border: 1px solid var(--darkgray);
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 18px;
   padding: 5px;
+  padding-bottom: 10px;
+}
+.form-control label input.success {
+  border: 2px solid rgb(1, 211, 1);
+  box-shadow: 0 0px 7px rgb(1, 211, 1);
+}
+
+.form-control label input.error {
+  border: 2px solid red;
+  box-shadow: 0 0px 7px red;
 }
 
 .form-control button {
@@ -361,12 +361,4 @@ footer {
   background-color: white;
   color: var(--darkgray);
   box-shadow: 0 0px 30px var(--darkgray);
-}
-.form-control .success input {
-  border: 1px solid rgb(1, 211, 1);
-  box-shadow: 0 0px 7px rgb(1, 211, 1);
-}
-.form-control .error input {
-  border: 1px solid red;
-  box-shadow: 0 0px 7px red;
 }
