@@ -6,6 +6,7 @@ eleventyNavigation:
   key: Projects
   order: 2
 ---
+
 <!-- Website Projects starts here -->
 <div class="text-center">
     <h1>Website Projects</h1>
@@ -66,9 +67,9 @@ eleventyNavigation:
 <div class="row">
 <!-- Simple Form starts here -->
   <div class="col-lg-4">
-    <form  action="" method="POST" class="form-control form-signin" id="validation-form">
+    <form  action="/projects/"  class="form-control form-signin" id="validation-form">
       <h2>Validation Form</h2>
-      <p>This is a form that uses JavaScript to validate your inputs and let you know if there are any errors.</p>
+      <p>This is a form that uses JavaScript to validate your inputs and lets you know if there are any errors.</p>
       <hr>
       <!-- First input starts here -->
       <label>First Name<br>
@@ -167,9 +168,5 @@ eleventyNavigation:
 <!-- JavaScript Projects ends here -->
 <br>
 <br>
-
-
-
-
 
 <script src="/js/projects.js"></script>
