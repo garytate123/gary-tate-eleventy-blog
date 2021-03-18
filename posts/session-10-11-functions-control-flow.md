@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Session 10/11 - Functions & Control Flow
+title: Session 10 - Functions & Control Flow
 description: This session learners will be taught about how to write a function
   in Javascript. The learners will also have to call the function to make it
   run. They will be introduced to control flow and how to use logic inside of a
