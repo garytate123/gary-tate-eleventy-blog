@@ -63,69 +63,7 @@ form.addEventListener("submit", function (event){
   } else {
     location.reload();
   }
-
-
 });
-
-function checkInputs() {
-  const firstNameValue = firstName.value.trim();
-  const lastNameValue = lastName.value.trim();
-  const emailValue = email.value.trim();
-  const passwordValue = password.value.trim();
-
-  let isValid = true;
-
-// first name starts here
-  if(firstNameValue === "") {
-    firstName.classList.remove("success");
-    firstName.classList.add("error");
-    isValid = false;
-  } 
-  else {
-    firstName.classList.remove("error");
-    firstName.classList.add("success");
-  }
-// first name ends here
-// Last name starts here
-
-  if(lastNameValue === "") {
-    lastName.classList.remove("success");
-    lastName.classList.add("error");
-    isValid = false;
-  } 
-  else {
-    lastName.classList.remove("error");
-    lastName.classList.add("success");
-  }
-// Last name ends here
-// Email Starts here
-  if(emailValue === "") {
-    email.classList.remove("success");
-    email.classList.add("error");
-    isValid = false;
-  } 
-  else {
-    email.classList.remove("error");
-    email.classList.add("success");
-  }
-  // Email ends here
-//  Password starts here
-  if(passwordValue === "") {
-    password.classList.remove("success");
-    password.classList.add("error");
-    isValid = false;
-  } 
-  else {
-    password.classList.remove("error");
-    password.classList.add("success");
-  }
-// Password ends here
-  if(!isValid) {
-    event.preventDefault();
-  }
-
-
-}
 // Form Validation ends here
 
 
