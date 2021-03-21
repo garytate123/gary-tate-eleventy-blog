@@ -163,7 +163,36 @@ eleventyNavigation:
     </div>
     </form>
   </div>
-  <!-- Tip Calculator Starts here -->
+  <!-- Tip Calculator Ends here -->
+  <!-- Tip Countdown Timer Starts here -->
+  <div class="col-lg-4">
+    <div class="form-control form-signin">
+      <h2>Countdown Timer</h2>
+      <p>The is a countdown timer that can be used for counting 
+      down to launch days, events, end of sales ect</p>
+      <hr>
+      <h3>New Years Day!</h3>
+      <div class="timer">
+       <div class="countdown-el days-c">
+          <p class="big-text" id="days">0</p>
+          <span>days</span>
+      </div>
+       <div class="countdown-el hours-c">
+          <p class="big-text" id="hours">0</p>
+          <span>hours</span>
+      </div>
+       <div class="countdown-el mins-c">
+          <p class="big-text" id="mins">0</p>
+          <span>mins</span>
+      </div>
+       <div class="countdown-el seconds-c">
+          <p class="big-text" id="seconds">0</p>
+          <span>seconds</span>
+      </div>
+      </div>
+    </div>
+  </div>
+  <!-- Tip Countdown Timer ends here -->
 </div>  
 <!-- JavaScript Projects ends here -->
 <br>
