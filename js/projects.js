@@ -209,9 +209,9 @@ setInterval(countdown, 1000);
 
 
 // This is a for loop for the 7 times table 
-// for (var number = 0; number <= 100; number = number + 7 ){
-//     console.log(number);
-// }
+for (var number = 0; number <= 100; number = number + 7 ){
+    console.log(number);
+}
 
 // Arrays
 
@@ -227,19 +227,19 @@ setInterval(countdown, 1000);
 // names[0] = "Pink"; 
 // 
 
-// var favFood = ["Fish", "Chips", "Pizza", "Chicken Balti"]
+var favFood = ["Fish", "Chips", "Pizza", "Chicken Balti"]
 
-// console.log("I want to eat " + favFood[0] + " and " + favFood[1]);
-
-// This will loop over the array of favFood and print each item of food
-// for (var i = 0; i < favFood.length; i++){
-//   console.log(favFood[i] + " are on the list of favorite foods.");
-// }
+console.log("I want to eat " + favFood[0] + " and " + favFood[1]);
 
 // This will loop over the array of favFood and print each item of food
-// for (var food of favFood) {
-//   console.log("I like to eat " + food + " on a Friday night.");
-// }
+for (var i = 0; i < favFood.length; i++){
+  console.log(favFood[i] + " are on the list of favorite foods.");
+}
+
+// This will loop over the array of favFood and print each item of food
+for (var food of favFood) {
+  console.log("I like to eat " + food + " on a Friday night.");
+}
 
 // Objects 
 
@@ -270,7 +270,7 @@ var recipe = {
 console.log("To make " + recipe.servings + " " + recipe.recipeTitle +  ", you will need... ")  
 
 for (var i = 0; i < recipe.ingredients.length; i++){
-  console.log("# "  + recipe.ingredients[i]);
+  console.log("# " + recipe.ingredients[i]);
   }
 console.log("The directions for making " + recipe.recipeTitle + " are..." )  
 
