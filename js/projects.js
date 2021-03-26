@@ -1,27 +1,18 @@
+// Index
+// LIVE ON WEBSITE
+// 1. Form Validation
+// 2. Simple form
+// 3. Simple calculator 1
+// 4. Tip Calculate
+// 5. Countdown Timer
 
 
-// drink order function starts here
-// function drinkOrder(size, drink){
-//   var drinkOrder = size + " " + drink;
-//   var message = "You have ordered a " + drinkOrder;
 
-//   switch (drink) {
-//       case "cola": 
-//           message = message + ", " + "would you like a slice of Chocolate cake with your " + drinkOrder + "?" 
-//           break;
-//       case "lemon": 
-//           message = message + ", " + "would you like a slice of Lemon Cheese cake with your " + drinkOrder + "?" 
-//           break;
-//       case "orange": 
-//           message = message + ", " + "would you like a slice of Terry's Chocolate Orange cake with your " + drinkOrder + "?" 
-//           break;
-//   }
-//   return message;
-// }
-// console.log(drinkOrder("medium", "lemon"));
-// drink order function starts here
 
-// Form Validation starts here
+
+
+
+// 1. Form Validation starts here
 const form = document.getElementById("validation-form");
 const firstName = document.getElementById("firstName");
 const lastName = document.getElementById("lastName");
@@ -69,8 +60,8 @@ form.addEventListener("submit", function (event){
     email.classList.remove("error");
     email.classList.add("success");
   }
-  // Email ends here
-//  Password starts here
+// Email ends here
+// Password starts here
   if(passwordValue === "") {
     password.classList.remove("success");
     password.classList.add("error");
@@ -89,19 +80,21 @@ form.addEventListener("submit", function (event){
 });
 // Form Validation ends here
 
-// Simple for starts here
+// ---------------------------------------------------------------------------------------
+
+// 2. Simple form starts here
 document.getElementById("name-btn").addEventListener("click", userName);
 function userName(){
     var firstName = document.getElementById("simpleFormFirstName").value;
     var lastName = document.getElementById("simpleFormLastName").value; 
     
     document.getElementById("userNameOutput").innerHTML = firstName.toUpperCase() + " " + lastName.toUpperCase();
-
   }
 // Simple form Ends here
-    
 
-// Simple calculator 1 starts here
+// ---------------------------------------------------------------------------------------
+
+// 3. Simple calculator 1 starts here
 document.getElementById("calc-btn").addEventListener("click", answer);
 function answer(){
     var num1 = document.getElementById("num1").value;
@@ -113,47 +106,48 @@ function answer(){
 }
 // Simple calculator 1 ends here
 
+// ---------------------------------------------------------------------------------------
 
-//Calculate Tip starts here
+//4. Tip Calculate starts here
 function calculateTip() {
-    var billAmt = document.getElementById("billamt").value;
-    var serviceQual = document.getElementById("serviceQual").value;
-    var numOfPeople = document.getElementById("peopleamt").value;
-    //validate input
-    if (billAmt === "" || serviceQual == 0) {
-      alert("Please enter values");
-      return;
-    }
-    //Check to see if this input is empty or less than or equal to 1
-    if (numOfPeople === "" || numOfPeople <= 1) {
-      numOfPeople = 1;
-      document.getElementById("each").style.display = "none";
-    } else {
-      document.getElementById("each").style.display = "block";
-    }
-    //Calculate tip
-    var total = (billAmt * serviceQual) / numOfPeople;
-    //round to two decimal places
-    total = Math.round(total * 100) / 100;
-    //next line allows us to always have two digits after decimal point
-    total = total.toFixed(2);
-    //Display the tip
-    document.getElementById("totalTip").style.display = "block";
-    document.getElementById("tip").innerHTML = total;
-  
+  var billAmt = document.getElementById("billamt").value;
+  var serviceQual = document.getElementById("serviceQual").value;
+  var numOfPeople = document.getElementById("peopleamt").value;
+  //validate input
+  if (billAmt === "" || serviceQual == 0) {
+    alert("Please enter values");
+    return;
   }
-  //Hide the tip amount on load
-  document.getElementById("totalTip").style.display = "none";
-  document.getElementById("each").style.display = "none";
-  //click to call function
-  document.getElementById("calculate").onclick = function() {
-    calculateTip();
-  };
-//Calculate Tip ends here
+  //Check to see if this input is empty or less than or equal to 1
+  if (numOfPeople === "" || numOfPeople <= 1) {
+    numOfPeople = 1;
+    document.getElementById("each").style.display = "none";
+  } else {
+    document.getElementById("each").style.display = "block";
+  }
+  //Calculate tip
+  var total = (billAmt * serviceQual) / numOfPeople;
+  //round to two decimal places
+  total = Math.round(total * 100) / 100;
+  //next line allows us to always have two digits after decimal point
+  total = total.toFixed(2);
+  //Display the tip
+  document.getElementById("totalTip").style.display = "block";
+  document.getElementById("tip").innerHTML = total;
 
-// Countdown Timer starts here
+}
+//Hide the tip amount on load
+document.getElementById("totalTip").style.display = "none";
+document.getElementById("each").style.display = "none";
+//click to call function
+document.getElementById("calculate").onclick = function() {
+  calculateTip();
+};
+// Tip Calculate ends here
 
+// ---------------------------------------------------------------------------------------
 
+// 5. Countdown Timer starts here
 const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById("hours");
 const minsEl = document.getElementById("mins");
@@ -179,9 +173,143 @@ secondsEl.innerHTML = seconds;
 
 }
 
-
-
 countdown();
 setInterval(countdown, 1000);
-
 // Countdown Timer ends here
+
+// ---------------------------------------------------------------------------------------
+
+// 6. CONDITIONAL STATEMENT: SWITCH STATEMENT: 
+// drink order function starts here
+function drinkOrder(size, drink){
+  var drinkOrder = size + " " + drink;
+  var message = "You have ordered a " + drinkOrder;
+
+  switch (drink) {
+      case "cola": 
+          message = message + ", " + "would you like a slice of Chocolate cake with your " + drinkOrder + "?" 
+          break;
+      case "lemon": 
+          message = message + ", " + "would you like a slice of Lemon Cheese cake with your " + drinkOrder + "?" 
+          break;
+      case "orange": 
+          message = message + ", " + "would you like a slice of Terry's Chocolate Orange cake with your " + drinkOrder + "?" 
+          break;
+  }
+  return message;
+}
+console.log(drinkOrder("medium", "lemon"));
+// drink order function ends here
+
+// -------------------------------------------------------
+
+
+    
+
+
+
+
+
+
+
+
+
+
+// for (var number = 0; number <= 100; number * 7 ){
+//     console.log(number);
+
+// }
+
+// While loop
+// var bottlesOfBeer = 99;
+// while (bottlesOfBeer > 0) {
+//     console.log(bottlesOfBeer + " bottles of beer on the wall");
+//     bottlesOfBeer = bottlesOfBeer - 1;
+// }
+// never put while(true){}
+
+// For loops
+// for (var i = 1; i <= 10; i++){
+//     console.log(i)
+// }
+
+// -------------------------------------------------------
+
+// This is a for loop for the 7 times table 
+// for (var number = 0; number <= 100; number = number + 7 ){
+//     console.log(number);
+// }
+
+
+
+
+// -------------------------------------------------------
+
+// Arrays
+
+// var arrayName = [1, 2, 3,];
+
+// var names = ["Red", "Orange", "Yellow"];
+
+// var numbersStrings = [1, 2, "one", "two",];
+
+// console.log(names.length);
+
+// To change the first item in the names array
+// names[0] = "Pink"; 
+// 
+// -------------------------------------------------------
+// var favFood = ["Fish", "Chips", "Pizza", "Chicken Balti"]
+
+// console.log("I want to eat " + favFood[0] + " and " + favFood[1]);
+
+// // This will loop over the array of favFood and print each item of food
+// for (var i = 0; i < favFood.length; i++){
+//   console.log(favFood[i] + " are on the list of favorite foods.");
+// }
+
+// // This will loop over the array of favFood and print each item of food
+// for (var food of favFood) {
+//   console.log("I like to eat " + food + " on a Friday night.");
+// }
+// -------------------------------------------------------
+// Objects 
+
+// var user = {
+//   fName: "Gary",
+//   lName: "Tate",
+//   age: 41,
+//   dob: {day: 28, month: 01, year: 1980}
+// };
+
+// console.log(user.dob);
+
+// user.age = 50;
+
+// console.log(user.age);
+
+// delete user.lName
+// user.lName = "Tate"
+
+// -------------------------------------------------------
+// var recipe = {
+//   recipeTitle: "Easy biscuits",
+//   servings: 25,
+//   ingredients: ["200g unsalted butter", "softened 200g white caster sugar", "1 medium egg", "lightly beaten", "400g plain flour"],
+//   directions: ["In a large mixing bowl, use an electric whisk to cream the butter with the sugar until well mixed and just creamy in texture. Do not overwork, or the biscuits will spread during baking.", "Beat in the egg until well combined. Add the flour and mix on a low speed until a dough forms. Gather the dough into a ball, wrap in cling film and chill for at least 1 hour.", "Preheat the oven to 190°C, fan 170°C, gas 5. Put the dough on a lightly floured surface and knead briefly, then roll out to 3mm thick. Cut, by hand or with cookie cutters, to your desired shape. Using a palette knife, transfer the biscuits to a baking tray lined with baking parchment.", "Bake for 12-14 minutes, depending on the size of your biscuits, until golden brown at the edges. Remove from the oven and transfer to a wire rack to cool." ]
+// }
+
+// console.log("To make " + recipe.servings + " " + recipe.recipeTitle +  ", you will need... ")  
+
+// for (var i = 0; i < recipe.ingredients.length; i++){
+//   console.log("# " + recipe.ingredients[i]);
+//   }
+// console.log("The directions for making " + recipe.recipeTitle + " are..." )  
+
+// for (var i = 0; i < recipe.directions.length; i++){
+//     console.log("# " + recipe.directions[i])
+// }  
+
+// for (var instructions of recipe) {
+//     console.log("To make  " + recipeTitle + " you will need " + ingredients);
+//   }

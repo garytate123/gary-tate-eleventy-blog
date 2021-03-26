@@ -199,3 +199,4 @@ eleventyNavigation:
 <br>
 
 <script src="/js/projects.js"></script>
+<script scr="js/loops.js"></script>
