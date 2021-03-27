@@ -6,10 +6,14 @@
 // 4. Tip Calculate
 // 5. Countdown Timer
 
+// NOT LIVE ON WEBSITE
+// 6. seven times table starts here
+// 7. Fav Food Array and for loop starts here
+// 8. Object for user starts here
+// 9. recipe object with arrays and loops starts here
 
-
-
-
+// 10. CONDITIONAL STATEMENT: SWITCH STATEMENT: 
+// drink order function starts here
 
 
 // 1. Form Validation starts here
@@ -179,7 +183,76 @@ setInterval(countdown, 1000);
 
 // ---------------------------------------------------------------------------------------
 
-// 6. CONDITIONAL STATEMENT: SWITCH STATEMENT: 
+
+//6. seven times table starts here
+for (var number = 0; number <= 100; number = number + 7 ){
+  // console.log(number);
+}
+// seven times table starts here
+
+// ---------------------------------------------------------------------------------------
+
+// 7. Fav Food Array and for loop starts here
+var favFood = ["Fish", "Chips", "Pizza", "Chicken Balti"]
+
+console.log("I want to eat " + favFood[0] + " and " + favFood[1]);
+
+// This will loop over the array of favFood and print each item of food
+for (var i = 0; i < favFood.length; i++){
+  console.log(favFood[i] + " are on the list of favorite foods.");
+}
+
+// This will loop over the array of favFood and print each item of food
+for (var food of favFood) {
+  console.log("I like to eat " + food + " on a Friday night.");
+}
+// Fav Food Array and for loop starts here
+
+// ---------------------------------------------------------------------------------------
+
+// 8. Object for user starts here
+var user = {
+  fName: "Gary",
+  lName: "Tate",
+  age: 41,
+  dob: {day: 28, month: 01, year: 1980}
+};
+
+user.age = 50; // this would change age to 50
+
+delete user.lName
+user.lName = "Tate" // this would create lName 
+// Object for user ends here
+
+// ---------------------------------------------------------------------------------------
+
+// 9. recipe object with arrays and loops starts here
+var recipe = {
+  recipeTitle: "Easy biscuits",
+  servings: 25,
+  ingredients: ["200g unsalted butter", "softened 200g white caster sugar", "1 medium egg", "lightly beaten", "400g plain flour"],
+  directions: ["In a large mixing bowl, use an electric whisk to cream the butter with the sugar until well mixed and just creamy in texture. Do not overwork, or the biscuits will spread during baking.", "Beat in the egg until well combined. Add the flour and mix on a low speed until a dough forms. Gather the dough into a ball, wrap in cling film and chill for at least 1 hour.", "Preheat the oven to 190°C, fan 170°C, gas 5. Put the dough on a lightly floured surface and knead briefly, then roll out to 3mm thick. Cut, by hand or with cookie cutters, to your desired shape. Using a palette knife, transfer the biscuits to a baking tray lined with baking parchment.", "Bake for 12-14 minutes, depending on the size of your biscuits, until golden brown at the edges. Remove from the oven and transfer to a wire rack to cool." ]
+}
+
+console.log("To make " + recipe.servings + " " + recipe.recipeTitle +  ", you will need... ")  
+
+for (var i = 0; i < recipe.ingredients.length; i++){
+  console.log("# " + recipe.ingredients[i]);
+  }
+console.log("The directions for making " + recipe.recipeTitle + " are..." )  
+
+for (var i = 0; i < recipe.directions.length; i++){
+    console.log("# " + recipe.directions[i])
+}  
+
+for (var instructions of recipe) {
+    console.log("To make  " + recipeTitle + " you will need " + ingredients);
+  }
+// recipe object with arrays and loops ends here
+
+// -----------------------------------------------------------------------------------------------
+
+//10. CONDITIONAL STATEMENT: SWITCH STATEMENT: 
 // drink order function starts here
 function drinkOrder(size, drink){
   var drinkOrder = size + " " + drink;
@@ -201,115 +274,9 @@ function drinkOrder(size, drink){
 console.log(drinkOrder("medium", "lemon"));
 // drink order function ends here
 
-// -------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
+// -----------------------------------------------------------------------------------------------
 
 
-    
-
-
-
-
-
-
-
-
-
-
-// for (var number = 0; number <= 100; number * 7 ){
-//     console.log(number);
-
-// }
-
-// While loop
-// var bottlesOfBeer = 99;
-// while (bottlesOfBeer > 0) {
-//     console.log(bottlesOfBeer + " bottles of beer on the wall");
-//     bottlesOfBeer = bottlesOfBeer - 1;
-// }
-// never put while(true){}
-
-// For loops
-// for (var i = 1; i <= 10; i++){
-//     console.log(i)
-// }
-
-// -------------------------------------------------------
-
-// This is a for loop for the 7 times table 
-// for (var number = 0; number <= 100; number = number + 7 ){
-//     console.log(number);
-// }
-
-
-
-
-// -------------------------------------------------------
-
-// Arrays
-
-// var arrayName = [1, 2, 3,];
-
-// var names = ["Red", "Orange", "Yellow"];
-
-// var numbersStrings = [1, 2, "one", "two",];
-
-// console.log(names.length);
-
-// To change the first item in the names array
-// names[0] = "Pink"; 
-// 
-// -------------------------------------------------------
-// var favFood = ["Fish", "Chips", "Pizza", "Chicken Balti"]
-
-// console.log("I want to eat " + favFood[0] + " and " + favFood[1]);
-
-// // This will loop over the array of favFood and print each item of food
-// for (var i = 0; i < favFood.length; i++){
-//   console.log(favFood[i] + " are on the list of favorite foods.");
-// }
-
-// // This will loop over the array of favFood and print each item of food
-// for (var food of favFood) {
-//   console.log("I like to eat " + food + " on a Friday night.");
-// }
-// -------------------------------------------------------
-// Objects 
-
-// var user = {
-//   fName: "Gary",
-//   lName: "Tate",
-//   age: 41,
-//   dob: {day: 28, month: 01, year: 1980}
-// };
-
-// console.log(user.dob);
-
-// user.age = 50;
-
-// console.log(user.age);
-
-// delete user.lName
-// user.lName = "Tate"
-
-// -------------------------------------------------------
-// var recipe = {
-//   recipeTitle: "Easy biscuits",
-//   servings: 25,
-//   ingredients: ["200g unsalted butter", "softened 200g white caster sugar", "1 medium egg", "lightly beaten", "400g plain flour"],
-//   directions: ["In a large mixing bowl, use an electric whisk to cream the butter with the sugar until well mixed and just creamy in texture. Do not overwork, or the biscuits will spread during baking.", "Beat in the egg until well combined. Add the flour and mix on a low speed until a dough forms. Gather the dough into a ball, wrap in cling film and chill for at least 1 hour.", "Preheat the oven to 190°C, fan 170°C, gas 5. Put the dough on a lightly floured surface and knead briefly, then roll out to 3mm thick. Cut, by hand or with cookie cutters, to your desired shape. Using a palette knife, transfer the biscuits to a baking tray lined with baking parchment.", "Bake for 12-14 minutes, depending on the size of your biscuits, until golden brown at the edges. Remove from the oven and transfer to a wire rack to cool." ]
-// }
-
-// console.log("To make " + recipe.servings + " " + recipe.recipeTitle +  ", you will need... ")  
-
-// for (var i = 0; i < recipe.ingredients.length; i++){
-//   console.log("# " + recipe.ingredients[i]);
-//   }
-// console.log("The directions for making " + recipe.recipeTitle + " are..." )  
-
-// for (var i = 0; i < recipe.directions.length; i++){
-//     console.log("# " + recipe.directions[i])
-// }  
-
-// for (var instructions of recipe) {
-//     console.log("To make  " + recipeTitle + " you will need " + ingredients);
-//   }
