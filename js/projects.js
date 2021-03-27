@@ -415,90 +415,98 @@ console.log(shoppingTotalBetter(shoppingCart, 30, "food"));
 // -----------------------------------------------------------------------------------------------
 
 //14. Task 4 - Shopping cart calculator for returning price between the range of first and second price starts here
-function priceRangeItems(cart, lowPrice, highPrice, quantity){
 
-        let arrItems = [];
+// function priceRangeItems(cart, lowPrice, highPrice, quantity){
 
-        for (let i = 0; i < cart.length; i++){
-            if (quantity === true){
-                if (cart[i].price * cart[i].quantity >=  )
+//         let arrItems = [];
 
-            } else{
-                if (cart[i].price >= lowPrice && cart[i].price <= highPrice){
-                    arrItems.push(cart[i]);
-                }
-            } 
-        }
-        return arrItems;
-}
+//         for (let i = 0; i < cart.length; i++){
+//             if (quantity === true){
+//                 if (cart[i].price * cart[i].quantity >=  )
 
-console.log(priceRangeItems(shoppingCart, 0.1, 2))
+//             } else{
+//                 if (cart[i].price >= lowPrice && cart[i].price <= highPrice){
+//                     arrItems.push(cart[i]);
+//                 }
+//             } 
+//         }
+//         return arrItems;
+// }
+
+// console.log(priceRangeItems(shoppingCart, 0.1, 2))
+
 //14. Task 4 - Shopping cart calculator for returning price between the range of first and second price ends here
 
 // -----------------------------------------------------------------------------------------------
 
 // 15. Task 5 - Mean calculator starts here
-var myNumbers = [3, 5, 4, 4, 1, 1, 2, 3];
 
-function mean(numbers) {
-    let total = 0;
-    for (let i =0; i < numbers.length; i++) {
-        total = total + numbers[i];
-    }
-    return total / numbers.length;
-}
-console.log(mean(myNumbers));
+// var myNumbers = [3, 5, 4, 4, 1, 1, 2, 3];
+
+// function mean(numbers) {
+//     let total = 0;
+//     for (let i =0; i < numbers.length; i++) {
+//         total = total + numbers[i];
+//     }
+//     return total / numbers.length;
+// }
+// console.log(mean(myNumbers));
+
 // 15. Task 5 - Mean calculator ends here
 
 // -----------------------------------------------------------------------------------------------
 
 // 16. Task 6 - Median calculator starts here
-var myNumbers = [10, 3, 90, 35, 24, 1];
-var myNumbers2 = [78, 21, 900, 1, 90,];
 
-function median(numbers) {
-    let numbersLength = numbers.length
-    let median = 0;
-    numbers.sort(compare);
-    if (numbers.length % 2 === 0){
-        median = (numbers[numbersLength / 2 - 1] + numbers[numbersLength / 2]) / 2;
-    } else { 
-    median = numbers[(numbersLength - 1) / 2];
-    }
-    return median;
-}
-function compare(a, b) {
-    return a - b;
-  }
-// console.log(median(myNumbers));
-console.log(median(myNumbers2));
+// var myNumbers = [10, 3, 90, 35, 24, 1];
+// var myNumbers2 = [78, 21, 900, 1, 90,];
+
+// function median(numbers) {
+//     let numbersLength = numbers.length
+//     let median = 0;
+//     numbers.sort(compare);
+//     if (numbers.length % 2 === 0){
+//         median = (numbers[numbersLength / 2 - 1] + numbers[numbersLength / 2]) / 2;
+//     } else { 
+//     median = numbers[(numbersLength - 1) / 2];
+//     }
+//     return median;
+// }
+// function compare(a, b) {
+//     return a - b;
+//   }
+// // console.log(median(myNumbers));
+// console.log(median(myNumbers2));
+
 // 16. Task 6 - Median calculator ends here
 
 // -----------------------------------------------------------------------------------------------
 
 // 17. Task 7 - Average calculator starts here
-var myModeNumbers = [1, 1, 2, 3, 3, 4, 4, 5];
 
-function mode(numbers) {
-    let modes = [];
-    let count = [];
-    let number = 0;
-    let maxIndex = 0;
-    for (let i = 0; i < numbers.length; i++) {
-        number = numbers[i];
-        count[number] = (count[number] || 0) + 1;
-        if (count[number] > maxIndex ) {
-            maxIndex = count[number];
-        }
-    }
-    for (let i in count){
-        if (count[i] === maxIndex) {
-            modes.push(Number(i));
-        }
-    }
-    return modes;
-}
-console.log(mode(myModeNumbers));
+// var myModeNumbers = [1, 1, 2, 3, 3, 4, 4, 5];
+
+// function mode(numbers) {
+//     let modes = [];
+//     let count = [];
+//     let number = 0;
+//     let maxIndex = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         number = numbers[i];
+//         count[number] = (count[number] || 0) + 1;
+//         if (count[number] > maxIndex ) {
+//             maxIndex = count[number];
+//         }
+//     }
+//     for (let i in count){
+//         if (count[i] === maxIndex) {
+//             modes.push(Number(i));
+//         }
+//     }
+//     return modes;
+// }
+// console.log(mode(myModeNumbers));
+
 // 17. Task 7 - Average calculator ends here
 
 // -----------------------------------------------------------------------------------------------
