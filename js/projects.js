@@ -15,6 +15,19 @@
 // 10. CONDITIONAL STATEMENT: SWITCH STATEMENT: 
 // drink order function starts here
 
+// Session 14 Tasks
+// 11. Task 1 - Shopping Cart Total
+// 12. Task 2 - Shopping cart total calculator with 80% off all food types 
+// 13. Task 3 - Shopping cart total calculator with X% off X types starts here
+// 14. Task 4 - Shopping cart calculator for returning price between the range of first and second price
+// 15. Task 5 - Mean calculator
+// 16. Task 6 - Median calculator
+// 17. Task 7 - Average calculator
+
+
+
+
+// ---------------------------------------------------------------------------------------
 
 // 1. Form Validation starts here
 const form = document.getElementById("validation-form");
@@ -275,8 +288,219 @@ console.log(drinkOrder("medium", "lemon"));
 // drink order function ends here
 
 // -----------------------------------------------------------------------------------------------
+
+// 11. Task 1 - Shopping Cart Total
+// Shopping cart objects starts here
+var shoppingCart = [
+  {
+      name:"loaf of bread",
+      type:"food",
+      quantity:1,
+      price:.85
+  },
+  {
+      name:"multipack beans",
+      type:"food",
+      quantity:2,
+      price:1
+  },
+  {
+      name:"mushrooms",
+      type:"food",
+      quantity:10,
+      price:.1
+  },
+  {
+      name:"can of beer",
+      type:"alcohol",
+      quantity:4,
+      price:1.1
+  },
+  {
+      name:"prosecco",
+      type:"alcohol",
+      quantity:1,
+      price:8.99
+  },
+  {
+      name:"steak",
+      type:"food",
+      quantity:2,
+      price:3.99
+  },
+  {
+      name:"blue cheese",
+      type:"food",
+      quantity:1,
+      price:2.99
+  },
+  {
+      name:"candles",
+      type:"home",
+      quantity:3,
+      price:1.99
+  },
+  {
+      name:"cheesecake",
+      type:"food",
+      quantity:1,
+      price:4.99
+  },
+  {
+      name:"onions",
+      type:"food",
+      quantity:3,
+      price:.4
+  },
+];
+// Shopping cart objects ends here
+
+//11. Task 1 - Shopping cart total calculator starts here
+function shoppingTotal(cart) {
+  let totalPrice = 0;
+  for (let i = 0; i < cart.length; i++){
+      let itemPrice = cart[i].price;
+      let itemQuantity = cart[i].quantity;
+      let itemTotalPrice = itemPrice * itemQuantity;
+      totalPrice = totalPrice + itemTotalPrice;
+  }
+
+  return totalPrice.toFixed(2);
+}
+console.log(shoppingTotal(shoppingCart));
+// Shopping cart total calculator ends here
+
 // -----------------------------------------------------------------------------------------------
+
+//12. Task 2 - Shopping cart total calculator with 80% off all food types starts here
+function shoppingTotal(cart) {
+  let totalPrice = 0;
+  for (let i = 0; i < cart.length; i++){
+      let itemPrice = cart[i].price;
+      let itemQuantity = cart[i].quantity;
+      let itemTotalPrice = itemPrice * itemQuantity;
+      if (cart[i].type === "food" ){
+          itemTotalPrice = 0.8 * itemTotalPrice;
+      }
+      totalPrice = totalPrice + itemTotalPrice;
+  }
+
+  return totalPrice.toFixed(2);
+}
+console.log(shoppingTotal(shoppingCart));
+// Shopping cart total calculator with 80% off all food types ends here
+
 // -----------------------------------------------------------------------------------------------
+
+//13. Task 3 - Shopping cart total calculator with X% off X types starts here
+
+function shoppingTotalBetter(cart, discountAmount, type) {
+  let totalPrice = 0;
+  for (let i = 0; i < cart.length; i++){
+      let itemPrice = cart[i].price;
+      let itemQuantity = cart[i].quantity;
+      let itemTotalPrice = itemPrice * itemQuantity;
+      if (cart[i].type === "food"){
+          itemTotalPrice = (100 - discountAmount) / 100 * itemTotalPrice;
+      }
+      totalPrice = totalPrice + itemTotalPrice;
+  }
+
+  return totalPrice.toFixed(2);
+}
+console.log(shoppingTotalBetter(shoppingCart, 20, "home"));
+console.log(shoppingTotalBetter(shoppingCart, 30, "food"));
+//13. Task 3 - Shopping cart total calculator with X% off X types ends here
+
+// -----------------------------------------------------------------------------------------------
+
+//14. Task 4 - Shopping cart calculator for returning price between the range of first and second price starts here
+function priceRangeItems(cart, lowPrice, highPrice, quantity){
+
+        let arrItems = [];
+
+        for (let i = 0; i < cart.length; i++){
+            if (quantity === true){
+                if (cart[i].price * cart[i].quantity >=  )
+
+            } else{
+                if (cart[i].price >= lowPrice && cart[i].price <= highPrice){
+                    arrItems.push(cart[i]);
+                }
+            } 
+        }
+        return arrItems;
+}
+
+console.log(priceRangeItems(shoppingCart, 0.1, 2))
+//14. Task 4 - Shopping cart calculator for returning price between the range of first and second price ends here
+
+// -----------------------------------------------------------------------------------------------
+
+// 15. Task 5 - Mean calculator starts here
+var myNumbers = [3, 5, 4, 4, 1, 1, 2, 3];
+
+function mean(numbers) {
+    let total = 0;
+    for (let i =0; i < numbers.length; i++) {
+        total = total + numbers[i];
+    }
+    return total / numbers.length;
+}
+console.log(mean(myNumbers));
+// 15. Task 5 - Mean calculator ends here
+
+// -----------------------------------------------------------------------------------------------
+
+// 16. Task 6 - Median calculator starts here
+var myNumbers = [10, 3, 90, 35, 24, 1];
+var myNumbers2 = [78, 21, 900, 1, 90,];
+
+function median(numbers) {
+    let numbersLength = numbers.length
+    let median = 0;
+    numbers.sort(compare);
+    if (numbers.length % 2 === 0){
+        median = (numbers[numbersLength / 2 - 1] + numbers[numbersLength / 2]) / 2;
+    } else { 
+    median = numbers[(numbersLength - 1) / 2];
+    }
+    return median;
+}
+function compare(a, b) {
+    return a - b;
+  }
+// console.log(median(myNumbers));
+console.log(median(myNumbers2));
+// 16. Task 6 - Median calculator ends here
+
+// -----------------------------------------------------------------------------------------------
+
+// 17. Task 7 - Average calculator starts here
+var myModeNumbers = [1, 1, 2, 3, 3, 4, 4, 5];
+
+function mode(numbers) {
+    let modes = [];
+    let count = [];
+    let number = 0;
+    let maxIndex = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        number = numbers[i];
+        count[number] = (count[number] || 0) + 1;
+        if (count[number] > maxIndex ) {
+            maxIndex = count[number];
+        }
+    }
+    for (let i in count){
+        if (count[i] === maxIndex) {
+            modes.push(Number(i));
+        }
+    }
+    return modes;
+}
+console.log(mode(myModeNumbers));
+// 17. Task 7 - Average calculator ends here
+
 // -----------------------------------------------------------------------------------------------
 
 
