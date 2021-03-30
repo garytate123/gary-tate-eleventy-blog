@@ -410,6 +410,7 @@ function shoppingTotalBetter(cart, discountAmount, type) {
 }
 console.log(shoppingTotalBetter(shoppingCart, 20, "home"));
 console.log(shoppingTotalBetter(shoppingCart, 30, "food"));
+
 //13. Task 3 - Shopping cart total calculator with X% off X types ends here
 
 // -----------------------------------------------------------------------------------------------
@@ -510,5 +511,96 @@ console.log(shoppingTotalBetter(shoppingCart, 30, "food"));
 // 17. Task 7 - Average calculator ends here
 
 // -----------------------------------------------------------------------------------------------
+
+
+// The DOM
+
+// Notes
+// document.getElementsByTagName("li");
+// document.querySelector("");
+// document.querySelectorAll("");
+// var imgCake = document.getElementById("cakePic");
+// imgCake.getAttribute("src")
+// imgCake.setAttribute("src", "https://")
+// var pageBody = document.getElementsByTagName("body")[0];
+// pageBody.style.color = "red";
+// const image = document.getElementById("cakePic");
+// image.setAttribute("src", "http://")
+// event.preventDefault();
+
+
+
+// Takeaway Task
+
+// This shows an alert on mouseover of title-one
+    // var titleOne =  document.getElementById("title-one");
+    // titleOne.addEventListener("mouseover", function(event){
+    //     alert("Hello there!");
+    // }); 
+
+// This will replace title-two with a new message on mouseover
+    // var titleTwo = document.getElementById("title-two");
+    // titleTwo.addEventListener("mouseover", function(event){
+    //     document.getElementById("title-two").innerHTML = "Please get in touch for more info.";
+    // });
+
+// This will replace the p element with the class of paragraph to a new message on mouseover
+    // var paragraph = document.querySelector("p");
+    // paragraph.addEventListener("mouseover", function(event){
+    //     var newParagraph = document.createTextNode("New Message");
+    //     paragraph.replaceWith(newParagraph);
+    // }); 
+
+
+
+// More Notes ---------------------------------------------
+// document.getElementById("title").innerHTML = "Welcome to my website!";
+
+// document.querySelector("p").style.backgroundColor = "yellow";
+
+// document.querySelector("img").setAttribute("src", "/img2.png");
+
+// ------------------------------------------------------------
+
+
+// const header = document.querySelector("header");
+
+// const paragraph = document.createElement("p");
+
+// const paragraphText = document.createTextNode("This is a new paragraph");
+
+// paragraph.appendChild(paragraphText);
+
+// header.appendChild(paragraph);
+
+// ------------------------------------------------------------
+
+// const list = document.querySelector(".message");
+
+// const listItem = document.createElement("li");
+
+// list.appendChild(listItem);
+
+
+// ------------------------------------------------------------
+
+// EVENTS
+
+// var button = document.getElementById("myBtn");
+
+// button.addEventListener("click", function (event){
+//     alert("Hi");
+// });
+
+// const anchor = document.querySelector("a");
+
+// anchor.addEventListener("click", function (event){
+// if (!event.target.getAttribute("href").startWith("http://...")){
+//     alert("are your sure you want to leave?")
+// }
+// });
+
+
+
 
 
