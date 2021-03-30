@@ -551,7 +551,17 @@ console.log(shoppingTotalBetter(shoppingCart, 30, "food"));
     //     paragraph.replaceWith(newParagraph);
     // }); 
 
+// This will replace the h3 element with a h1 element with a new message on mouseover
+    // var titleThree = document.querySelector("h3");
+    // titleThree.addEventListener("mouseover", function(event){
 
+    //     var newH1 = document.createElement("h1");
+    //     var newMessage = document.createTextNode("New Message");
+
+    //     newH1.appendChild(newMessage);
+        
+    //     titleThree.replaceWith(newH1);
+    // }); 
 
 // More Notes ---------------------------------------------
 // document.getElementById("title").innerHTML = "Welcome to my website!";
