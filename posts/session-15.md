@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Session 15 The DOM
+title: Session 15 - The DOM
 description: Learners will be introduced to the DOM. They will be shown how to
   make javascript bring a page to life by reacting to events. The learners will
   be shown how to trigger function calls using on page events.
