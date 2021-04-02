@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Session 13 Loops, Arrays and Objects
+title: Session 13 - Loops, Arrays and Objects
 description: This session learners will have loops explained to them. Learners
   will also be introduced to 2 data types in detail (arrays & objects). We will
   then work through some simple tasks to demonstrate when they will be used and
