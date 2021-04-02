@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Seccion 12 Pseudocode & Comments
+title: Seccion 12 - Pseudocode & Comments
 description: This session learners will be introduced to the concept of
   Pseudocode. The learners will also be taught about the importance of comments
   and how to write comments in HTML, CSS and JS.
