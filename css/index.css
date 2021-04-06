@@ -329,6 +329,12 @@ footer {
   border: black solid 2px;
   transition: 0.4s;
 }
+.form-control input {
+  background-color: white;
+}
+.form-control textarea {
+  background-color: white;
+}
 .form-control:hover {
   box-shadow: 0 0px 20px black;
 }

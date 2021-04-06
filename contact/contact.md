@@ -18,14 +18,11 @@ eleventyNavigation:
 <br />
 <h2 class="h2 mb-3 font-weight-normal">Gary Tate</h2>
 <br />
-<h4 class="h4 mb-3 font-weight-normal">Address</h4>
-<p>468 Green Avenue <br />West Yorkshire <br /> WF43 9PO </p>
-<br />
 <h4 class="h4 mb-3 font-weight-normal">Email Address</h4>
 <p>garytatelufc@gmail.com </p>
 <br />
 <h4 class="h4 mb-3 font-weight-normal">Phone Number</h4>
-<p>07123 123 123 </p>
+<p>07411 975 783 </p>
 </div>
 <!-- contact form -->
 <div class="col-md-6">
@@ -38,11 +35,6 @@ eleventyNavigation:
       <input name="email" type="email" id="inputEmail" class="form-control middle-contact-form-input" placeholder="Email address" required autofocus>
       <label for="message" class="sr-only">Message</label>
       <textarea type="textarea" name="message" id="message" class="form-control bottom-contact-form-input" placeholder="Your message" required></textarea>
-      <div class="checkbox mb-3">
-        <label>
-          <input type="checkbox" name="newsletter" id="newsletter" value="signUp"> Sign me up to the newsletter
-        </label>
-      </div>
       <div class="checkbox mb-3">
         <label>
           <input type="checkbox" name="accept-terms-and-conditions" id="accept-terms-and-conditions" value="accepted T&Cs" required> Accept Terms & Conditions
